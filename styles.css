@@ -572,13 +572,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #92e696;
+}
+
+label {
+  color: white;
 }
 
 /* Style the container/contact section */
 .email-container {
   border-radius: 5px;
-  background-color: #112145;
+  background-color: #0a193b;
   padding: 10px;
   max-height: 526px;
 }
@@ -594,6 +598,30 @@ input[type=submit]:hover {
   float: right;
   margin-right: 12.5%;
   color: rgb(143, 255, 218);
+}
+
+#social-header{
+  margin-top: -27rem;
+  margin-left: 0.7rem;
+  color: white;
+}
+
+.networks {
+  margin-left: 50%;
+  margin-top: 35.5%;
+}
+
+#lkin {
+  color:aqua;
+}
+#git {
+  color: aqua;
+}
+#email {
+  color: white;
+}
+#phone{
+  color: white;
 }
 
 /* Create two columns that float next to eachother */
