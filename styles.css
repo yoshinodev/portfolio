@@ -330,7 +330,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./herobcg.jpg) center/cover no-repeat;
+    url(img/herobcg.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -427,7 +427,7 @@ footer p {
 }
 
 .bird{
-  background: url("birds.svg");
+  background: url("img/birds.svg");
   background-size: auto 100%;
   width: 88px;
   height: 125px;
@@ -541,7 +541,7 @@ footer p {
   border-image-width:16px 16px 16px 16px;
   border-image-outset:8px 28px 8px 8px;
   border-image-repeat:stretch stretch;
-  border-image-source:url("border.png");
+  border-image-source:url("img/border.png");
   border-style:solid;
 }
 .illust {
