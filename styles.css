@@ -362,17 +362,19 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#contact,
-#projects {
+#about{
   height: 80vh;
+}
+#projects {
+  height: 100vh;
 }
 #contact {
   background: var(--clr-white);
+  height: 80vh;
 }
 footer {
   background: var(--clr-grey-1);
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
 }
 footer p {
   color: var(--clr-white);
@@ -536,7 +538,7 @@ footer p {
   position: absolute;
   z-index: inherit;
   align-content: center;
-  top: 10%;
+  top: 12%;
   border-image-slice:27 27 27 27;
   border-image-width:16px 16px 16px 16px;
   border-image-outset:8px 28px 8px 8px;
