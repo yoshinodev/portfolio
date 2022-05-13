@@ -37,7 +37,7 @@ window.addEventListener("scroll", function () {
   // setup back to top link
 
   if (scrollHeight > 500) {
-    console.log("helo");
+    console.log("scroll height is more than 500 now");
 
     topLink.classList.add("show-link");
   } else {
@@ -77,3 +77,24 @@ scrollLinks.forEach((link) => {
   });
 });
 // calculate heights
+// email script
+const btn = document.getElementById('send_button');
+
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_g00zmb6';
+   const templateID = 'template_5g2ymxx';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
