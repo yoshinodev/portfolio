@@ -98,3 +98,5 @@ document.getElementById('contact-form')
       alert(JSON.stringify(err));
     });
 });
+
+// function to erase after email sent

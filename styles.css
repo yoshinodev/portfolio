@@ -360,7 +360,8 @@ header {
   text-transform: uppercase;
 }
 .title span {
-  color: var(--clr-secondary);
+  color: #6EDADE;
+  background-color: #213545;
 }
 #about{
   height: 80vh;
@@ -375,31 +376,46 @@ header {
 footer {
   background: var(--clr-grey-1);
   padding: 2rem 1rem;
+  color: #BBC3D3;
 }
-footer p {
-  color: var(--clr-white);
+#footer {
+  color: #BBC3D3;
+}
+
+#date {
+  color: #BBC3D3;
+}
+.card-footer {
+  color: #404040;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
 
+.project-description {
+  color: #3E4A60;
+  text-align: center;
+  letter-spacing: var(--spacing);
+}
+
 .top-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   position: fixed;
   bottom: 3rem;
   right: 3rem;
   background: var(--clr-secondary);
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 2.5rem;
   display: grid;
   place-items: center;
   border-radius: var(--radius);
-  color: var(--clr-white);
+  color: #171717;
   animation: bounce 2s ease-in-out infinite;
   visibility: hidden;
   z-index: -100;
 }
+
 .show-link {
   visibility: visible;
   z-index: 100;
@@ -564,6 +580,10 @@ footer p {
   justify-items: center;
 }
 
+#question-contact {
+  color: #F2F6F7;
+}
+
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
@@ -575,8 +595,8 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #04EC97;
+  color: #242424;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
@@ -584,6 +604,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #92e696;
+  color: #242424;
 }
 
 input[type="email" i] {
