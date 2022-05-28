@@ -6,6 +6,8 @@
         <title>Portfolio</title>
         <!-- font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 
         <!-- styles -->
         <link rel="stylesheet" href="styles.css" />
@@ -62,8 +64,17 @@
         <!-- banner  -->
         <div class="banner">
             <div class="container">
-                <h1>I'm Anaïs Gilbert</h1>
-                <h4>I'm a self-taught developer. <i class="fas fa-coffee"></i></h4>
+              <div class="name-heading">
+                <h1>My name is
+
+                </div>
+            <div class="content">
+                    <h2>Anaïs</h2><h2>Anaïs</h2>
+                    <h2>Gilbert</h2><h2>Gilbert</h2>
+                    
+            </div>
+                  </h1>
+                <p id="banner-description">I'm a self-taught developer. <i class="fas fa-coffee"></i></p>
                 <a href="#contact" class="scroll-link btn btn-white">Contacts</a>
             </div>
         </div>
@@ -86,13 +97,39 @@
                 <div class="bird-container bird-container-four">
                     <div class="bird bird-four"></div>
                 </div>
-                <div class="illustration">
+                <div class="il-border">
                     <img src="img/ilus.jpg" class="illust" alt="woman programmer ilustration">
-                    <p class="bio">My name is Anaïs Gilbert. I'm an enthusiastic developer. I love to solve problems and I enjoy team work.
-                      My stacks are: HTML, CSS javascript and SQL.
-                      Future learning stacks: Nodejs, C# and Java.
-                      I'm available to work and embrace every challenge as knowledge.
-                    </p>
+                    <div class="bio">
+                      <div class="text-bio">
+                        <p id="text-biopt1">
+                          My name is <strong>Anaïs Gilbert</strong>. I'm an enthusiastic <strong>developer.</strong>
+                          I love to <strong>solve problems</strong> and enjoy <strong>team work.</strong>
+                        </p>
+                        <p id="text-biopt2">
+                          In my <strong>free time</strong>, if I'm not <strong>learning</strong> something new, I'm probably <strong>meditating</strong>, playing with my cats or <strong>reading.</strong>
+                        </p>
+                        <p id="text-biopt3">
+                          I embrace every challenge as knowledge and I'm <strong>available to work.</strong>
+                        </p>
+                      </div>
+                        <div id="current-stacks">
+                          My <strong>current stacks</strong> are: HTML, CSS, Javascript and SQL.
+                          <ul>
+                            <i class="devicon-html5-plain-wordmark colored" style="font-size:50px" ></i>
+                            <i class="devicon-css3-plain-wordmark colored" style="font-size:50px"></i>
+                            <i class="devicon-javascript-plain colored" style="font-size:50px"></i>
+                            <i class="devicon-mysql-plain-wordmark colored" style="font-size:50px"></i>
+                          </ul>
+                        </div>
+                          <div id="future-stacks">
+                            Future learning stacks: Nodejs, C# and Java.
+                            <ul>
+                              <i class="devicon-nodejs-plain-wordmark colored" style="font-size:50px"></i>
+                              <i class="devicon-csharp-plain-wordmark colored" style="font-size:50px"></i>
+                              <i class="devicon-java-plain-wordmark colored" style="font-size:50px"></i>
+                            </ul>
+                          </div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -184,8 +221,8 @@
                 <h2 id="social-header">Social <br>networks:</h2>
               </div>
                 <div class="networks">
-                  <p id="email_net">Email: a.gilbertt3@gmail.com</p>
-                  <p id="phone">Phone: +351 911101230</p>
+                  <p id="email_net">Email: <a class="networks-link" alt="email" href="mailto:a.gilbertt3@gmail.com">a.gilbertt3@gmail.com</a></p>
+                  <p id="phone">Phone: <a class="networks-link" href="+351911101230" alt="contact number" target="_blank">+351 911101230</a></p>
                   <p id="lkin"><a id="lkin" href="https://linkedin.com/in/agilbert6/" target="_blank">
                     <i class="fab fa-linkedin"> Linkedin</i>
                     </a></p>
