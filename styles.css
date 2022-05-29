@@ -117,6 +117,39 @@ p {
   color: var(--clr-grey-5);
 }
 
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+  width: 90vw;
+    max-width: 93vw;
+    margin: -8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
 #banner-description {
   font-size: 22px;
 }
@@ -160,6 +193,10 @@ p {
   padding-bottom: 43px;
 }
 
+ul {
+  margin-right: 30px;
+}
+
 @keyframes animate {
   0%,
   100% {
@@ -190,30 +227,6 @@ p {
     );
   }
 };
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
 /*  global classes */
 
 .btn {
@@ -241,6 +254,66 @@ p {
   padding: 0.5rem 1rem;
 }
 
+.il-border {
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  max-height: 75vh;
+  position: absolute;
+  align-content: center;
+  top: 10%;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 16px 16px 16px 16px;
+  border-image-outset: 8px 10px 8px 10px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url(img/border.png);
+  border-style: solid;
+}
+
+.bird-container {
+  position: absolute;
+  top: -11%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.text-bio {
+  color: #0a193b;
+  width: 629px;
+  position: relative;
+  text-align: justify;
+  margin-left: 143px;
+  font-size: 18px;
+}
+
+.illust {
+  display: none;
+}
+
+.bio {
+  width: 700px;
+  font-size: 18px;
+  font-family: 'Courier Prime', monospace;
+  display: block;
+  text-align: -webkit-auto;
+  height: 70vh;
+}
+
+div#current-stacks {
+  margin-left: 7em;
+    top: 60%;
+    position: absolute;
+} 
+
+div#future-stacks {
+  margin-left: 7em;
+  top: 80%;
+  position: absolute;
+}
 /* section */
 .section {
   padding: 1rem;
@@ -251,11 +324,57 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+#social-header {
+  margin-top: -33rem;
+  margin-left: 0.7rem;
+  color: white;
+}
+
+.networks {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+footer {
+  background: var(--clr-grey-1);
+  padding: 1rem 3rem;
+  margin: 16px;
+  color: #BBC3D3;
+  height: 100px;
+}
+
+.row {
+  height: 80vh;
+}
+
+#social-header {
+  margin-top: -32rem;
+  margin-left: 0.7rem;
+  color: white;
+}
+
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
   }
+  
+  form#contact-form {
+  max-height: 500px;
+  max-width: 600px;
+  position: absolute;
+  bottom: -2100px;
+  left: 47%;
+  }
+
+  img {
+    display: block;
+    max-width: 600px;
 }
+
+}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -712,10 +831,7 @@ label {
   max-height: 526px;
 }
 
-.contact-img {
-  width: 450px;
-  height: 450px;
-}
+
 
 .contact-text {
   text-align: right;
@@ -732,8 +848,8 @@ label {
 }
 
 .networks {
-  margin-left: 50%;
-  margin-top: 35.5%;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 .networks-link {
@@ -754,12 +870,13 @@ label {
 }
 
 /* Create two columns that float next to eachother */
-.column {
+/*.column {
   float: left;
   width: 50%;
   margin-top: -22px;
   padding: 20px;
-}
+}-*/
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -770,10 +887,71 @@ label {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+   input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+ 
+  .column {
+  float: left;
+  width: 50%;
+  padding: -1px;
+}
+.contact-img {
+  display: none;
+}
+#social-header{
+  display: none;
+}
+
+.networks {
+  display: block;
+  margin-top: 30%;
+}
+
+form#contact-form {
+  padding-right: 20px;
+  margin-left: -20px;
+}
+
+.text-bio {
+  color: #0a193b;
+  width: 367px;
+  position: relative;
+  text-align: justify;
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.bio {
+  width: auto;
+  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Courier Prime', monospace;
+  display: inline-block;
+  text-align: -webkit-auto;
+  height: 70vh;
+  padding-top: 6%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div#current-stacks {
+  margin-left: auto;
+  top: 60%;
+  position: absolute;
+}
+
+div#future-stacks {
+  margin-left: auto;
+  top: 80%;
+  position: absolute;
+}
+
+.footer {
+  display: none;
+}
+
 }
 /* ****** PROJECTS SECTION ************ */
 /* Float four columns side by side */
@@ -815,8 +993,8 @@ label {
 
 #womenwork {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   filter: brightness(1.2) opacity(0.82);
 }
 
