@@ -150,6 +150,17 @@ p {
   }
 }
 
+form#contact-form {
+width: 40%;
+position: relative;
+left: 50%;
+margin-top: -30%;
+}
+
+img.contact-img {
+  max-width: 600px;
+}
+
 #banner-description {
   font-size: 22px;
 }
@@ -359,13 +370,42 @@ footer {
   .section-center {
     width: 95vw;
   }
+
+  .content {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    padding-left: 13%;
+}
+
+.content h2:nth-child(2) {
+  color: #f04aa9ba;
+  animation: animate 4s ease-in-out infinite;
+  padding-left: 50px;
+}
+
+.content h2:nth-child(3) {
+  color: transparent;
+  padding-left: 8em;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.content h2:nth-child(4) {
+  color: #f04aa9ba;
+  padding-left: 8em;
+  animation: animate 4s ease-in-out infinite;
+}
   
   form#contact-form {
   max-height: 500px;
   max-width: 600px;
   position: absolute;
-  bottom: -2100px;
-  left: 47%;
+  bottom: -2050px;
+  left: 53%;
   }
 
   img {
@@ -910,8 +950,12 @@ label {
 }
 
 form#contact-form {
-  padding-right: 20px;
-  margin-left: -20px;
+  padding-right: 30px;
+  margin-left: -30px;
+  width: 65%;
+  position: relative;
+  left: 50%;
+  margin-top: -10%;
 }
 
 .text-bio {
@@ -998,4 +1042,70 @@ div#future-stacks {
   filter: brightness(1.2) opacity(0.82);
 }
 
-/* maybe create transparent image text */
+@media screen and (max-width: 200px) {
+  .name-heading {
+    padding-bottom: 43px;
+    max-width: 100vw;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 3.5em;
+  position: absolute;
+  transform: translate(-55%, -60%);
+  text-transform: uppercase;
+}
+
+.content h2:nth-child(3) {
+  color: transparent;
+  padding-left: 8.5em;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.content h2:nth-child(4) {
+  color: #f04aa9ba;
+  padding-left: 8.5em;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.bio {
+  width: auto;
+  font-size: 14px;
+  font-family: 'Courier Prime', monospace;
+  display: inline-block;
+  text-align: -webkit-auto;
+  height: 70vh;
+  padding-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-bio {
+  color: #0a193b;
+  width: 370px;
+  position: relative;
+  text-align: justify;
+  margin-left: auto;
+  font-size: 14px;
+}
+div#current-stacks {
+  margin-left: auto;
+  top: 63%;
+  position: absolute;
+}
+
+div#future-stacks {
+  margin-left: auto;
+  top: 82%;
+  position: absolute;
+}
+
+div#current-stacks i {
+  display: none;
+}
+
+div#future-stacks i {
+  display: none;
+}
+
+}
