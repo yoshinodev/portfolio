@@ -4,13 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" /> 
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/site.webmanifest">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-TileImage" content="img/mstile-150x150.png">
+        <meta name="theme-color" content="#ffffff">
+          
         <!-- font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-
         <!-- styles -->
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <style>
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+            width: 80%;
+            margin: auto;
+          }
+          </style>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!-- header -->
@@ -19,7 +38,7 @@
             <div class="nav-center">
                 <!-- nav header -->
                 <div class="nav-header">
-                    <img src="img/logo.png" class="logo" alt="logo" />
+                    <img src="img/favicon.ico" class="logo" alt="logo" />
                     <button class="nav-toggle" alt="horizontal bars to represent the menu that can be toggled when navigating the webpage">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -138,71 +157,70 @@
         <div class="title">
             <h2>My <span>projects</span></h2>
         </div>
-        <div class="row-card">
-            <div class="column-card">
-              <div class="card">Card 1.
-                  <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                   <p class="project-description">Project description will go here.</p> 
-                   <p  class="card-footer">Source code || Live</p>
-                </div>
-            </div>
-
-            <div class="column-card">
-              <div class="card">Card 2.
-                <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                <p class="project-description">Project description will go here.</p> 
-                <p class="card-footer">Source code || Live</p>
-                </div>
-            </div>
-
-            <div class="column-card">
-              <div class="card">Card 3.
-                <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                <p class="project-description">Project description will go here.</p> 
-                <p class="card-footer">Source code || Live</p>
-                </div>
-            </div>
-
-            <div class="column-card">
-              <div class="card">Card 4.
-                <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                <p class="project-description">Project description will go here.</p> 
-                <p class="card-footer">Source code || Live</p>
-                </div>
-            </div>
-
-            <div class="column-card">
-                <div class="card">Card 5.
-                    <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                     <p class="project-description">Project description will go here.</p> 
-                     <p class="card-footer">Source code || Live</p>
+        <div class="bd-example">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="12000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+          
+                <div class="item active">
+                  <img id="catchweather" src="img/catchurweather.png" alt="weather app" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Catch your weather</h3>
+                    <p class="carous-p">Not your regular app. Personal project to contribute to this api.
+                      <br>
+                      Guess what? Background and icon changes dynamically. Go check it out!</p>
+                    <p><a class="carous-a" href="https://github.com/yoshinodev/weather" target="_blank">Source Code</a> || 
+                      <a class="carous-a" href="https://catchyourweather.netlify.app/" target="_blank">Live</a><p>
                   </div>
-            </div>
-
-              <div class="column-card">
-                <div class="card">Card 6.
-                  <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                  <p class="project-description">Project description will go here.</p> 
-                  <p class="card-footer">Source code || Live</p>
                 </div>
+          
+                <div class="item">
+                  <img id="womenwork" src="img/womenwork.svg" alt="women working sign" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Coming soon..</h3>
+                    <p class="carous-p">Stay tuned.</p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img id="womenwork" src="img/womenwork.svg" alt="working women sign alert" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Coming soon..</h3>
+                    <p class="carous-p">Stay tuned.</p>
+                  </div>
+                </div>
+          
+                <div id="womenwork" class="item">
+                  <img src="img/womenwork.svg" alt="working women sign" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Coming soon..</h3>
+                    <p class="carous-p">Stay tuned.</p>
+                  </div>
+                </div>
+            
               </div>
-
-              <div class="column-card">
-                <div class="card">Card 7.
-                  <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                  <p class="project-description">Project description will go here.</p> 
-                  <p class="card-footer">Source code || Live</p>
-                </div>
-              </div>
-
-              <div class="column-card">
-                <div class="card">Card 8.
-                  <img id="womenwork" alt="alert signal with a description women at work showing a women pictogram handling a shovel" src="img/womenwork.svg">
-                  <p class="project-description">Project description will go here.</p> 
-                  <p class="card-footer">Source code || Live</p>
-                </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-          </di>
+          </div>
+       
     </section>
     <!-- contact -->
     <section id="contact" class="section">
@@ -258,5 +276,6 @@
         <script src="app.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script type="text/javascript">emailjs.init('BipXyKI5eyey3XhCH')</script>
+    
     </body>
 </html>

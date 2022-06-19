@@ -201,7 +201,15 @@ img.contact-img {
 }
 
 .name-heading {
-  padding-bottom: 43px;
+  padding-bottom: 27px;
+}
+
+
+#womenwork {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+  filter: brightness(1.2) opacity(0.82);
 }
 
 ul {
@@ -410,30 +418,30 @@ div#future-stacks {
 
   .content {
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 74px;
 }
 
   .content h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
-    padding-left: 13%;
+    padding-left: 75%;
 }
 
 .content h2:nth-child(2) {
   color: #f04aa9ba;
   animation: animate 4s ease-in-out infinite;
-  padding-left: 50px;
+  padding-left: 75%;
 }
 
 .content h2:nth-child(3) {
   color: transparent;
-  padding-left: 8em;
+  padding-left: 19em;
   -webkit-text-stroke: 1px #ffffff;
 }
 
 .content h2:nth-child(4) {
   color: #f04aa9ba;
-  padding-left: 8em;
+  padding-left: 19em;
   animation: animate 4s ease-in-out infinite;
 }
   
@@ -546,6 +554,20 @@ nav {
 .show-links {
   height: 200px;
 }
+#catchweather {
+  background-color: #171717;
+  opacity: 0.7;
+}
+.carous-p {
+  color:#f1f1f1;
+  font-weight: 500;
+  background-color: #10121883;
+}
+.carous-a {
+  color: #fff;
+  font-weight: 700;
+  background-color: #1012189c;
+}
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
@@ -579,7 +601,7 @@ nav {
   .links a {
     background: transparent;
     color: rgba(255, 255, 255, 0.925);
-    font-size: 1.1rem;
+    font-size: 2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
@@ -625,7 +647,7 @@ header {
   color: var(--clr-white);
   max-width: 25rem;
   margin: 0 auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3.25rem;
 }
 
 .networks {
@@ -930,14 +952,15 @@ label {
 }
 
 #social-header{
-  margin-top: -27rem;
-  margin-left: 0.7rem;
+  margin-top: -45rem;
+  margin-left: 2.6rem;
   color: white;
 }
 
 .networks {
   margin-left: auto;
   margin-top: auto;
+  padding-left: 15px;
 }
 
 .networks-link {
