@@ -149,12 +149,38 @@ p {
     line-height: 1;
   }
 }
-
+#contactsBtn {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+#contactsBtn:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+#contactsBtn:active {
+	position:relative;
+	top:1px;
+}
 form#contact-form {
-width: 40%;
-position: relative;
-left: 50%;
-margin-top: -30%;
+  height: auto;
+  max-width: 40%;
+  color: #fff;
+  position: relative;
+  float: right;
+  margin: 16px;
+  bottom: 26vh;
 }
 
 img.contact-img {
@@ -173,32 +199,13 @@ img.contact-img {
 .content h2 {
   color: #fff;
   font-size: 5.5em;
-  position: absolute;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 50px;
 }
 
-.content h2:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 1px #ffffff;
-}
-
-.content h2:nth-child(2) {
-  color: #f04aa9ba;
-  animation: animate 4s ease-in-out infinite;
-}
-
-.content h2:nth-child(3) {
-  color: transparent;
-  padding-left: 7.5em;
-  -webkit-text-stroke: 1px #ffffff;
-}
-
-.content h2:nth-child(4) {
-  color: #f04aa9ba;
-  padding-left: 7.5em;
-  animation: animate 4s ease-in-out infinite;
-}
 
 .name-heading {
   padding-bottom: 27px;
@@ -248,29 +255,29 @@ ul {
 };
 /*  global classes */
 
-.btn {
-  text-transform: uppercase;
-  background: rgb(10, 10, 10);
-  color: var(--clr-black);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: all 150ms ease-in-out;;
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
-  cursor: pointer;
-  box-shadow: 0 0 6px 6px rgb(137, 190, 227);
-  border-radius: var(--radius);
+#contactsBtn {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
 }
-.btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-grey-3);
+#contactsBtn:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
 }
-.btn-white {
-  color: var(--clr-white);
-  border-color: var(--clr-white);
-  border-radius: 0;
-  padding: 0.5rem 1rem;
+#contactsBtn:active {
+	position:relative;
+	top:1px;
 }
 
 .il-border {
@@ -302,10 +309,9 @@ ul {
 
 .text-bio {
   color: #0a193b;
-  width: 629px;
+  width: auto;
   position: relative;
   text-align: justify;
-  margin-left: 143px;
   font-size: 18px;
 }
 
@@ -314,12 +320,15 @@ ul {
 }
 
 .bio {
-  width: 700px;
-  font-size: 18px;
-  font-family: 'Courier Prime', monospace;
-  display: block;
-  text-align: -webkit-auto;
-  height: 70vh;
+  font-size: 12px;
+    font-family: 'Courier Prime', monospace;
+    display: block;
+    text-align: -webkit-auto;
+    height: 70vh;
+    padding-top: 6%;
+    width: auto;
+    margin: auto;
+    padding: 20px;
 }
 
 div#current-stacks {
@@ -379,29 +388,29 @@ footer {
     width: 95vw;
   }
 
-  .btn {
-    text-transform: uppercase;
-    background: rgb(10, 10, 10);
-    color: var(--clr-black);
-    padding: 0.375rem 0.75rem;
-    letter-spacing: var(--spacing);
-    display: inline-block;
-    transition: all 150ms ease-in-out;;
-    font-size: 0.875rem;
-    border: 2px solid var(--clr-black);
-    cursor: pointer;
-    box-shadow: 0 0 6px 6px rgb(137, 190, 227);
-    border-radius: var(--radius);
+  #contactsBtn {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+    background-color:#bddbfa;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
   }
-  .btn:hover {
-    color: var(--clr-white);
-    background: var(--clr-grey-3);
+  #contactsBtn:hover {
+    background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color:#80b5ea;
   }
-  .btn-white {
-    color: var(--clr-white);
-    border-color: var(--clr-white);
-    border-radius: 0;
-    padding: 0.5rem 1rem;
+  #contactsBtn:active {
+    position:relative;
+    top:1px;
   }
 
   div#current-stacks {
@@ -417,40 +426,20 @@ div#future-stacks {
 }
 
   .content {
-    position: relative;
-    padding-bottom: 74px;
-}
-
-  .content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 1px #ffffff;
-    padding-left: 75%;
-}
-
-.content h2:nth-child(2) {
-  color: #f04aa9ba;
-  animation: animate 4s ease-in-out infinite;
-  padding-left: 75%;
-}
-
-.content h2:nth-child(3) {
-  color: transparent;
-  padding-left: 19em;
-  -webkit-text-stroke: 1px #ffffff;
-}
-
-.content h2:nth-child(4) {
-  color: #f04aa9ba;
-  padding-left: 19em;
-  animation: animate 4s ease-in-out infinite;
-}
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
   
   form#contact-form {
-  max-height: 500px;
-  max-width: 600px;
-  position: absolute;
-  bottom: -2050px;
-  left: 53%;
+    height: auto;
+    max-width: 40%;
+    color: #fff;
+    position: relative;
+    float: right;
+    margin: 16px;
+    bottom: 16vh;
   }
 
 .networks {
@@ -519,7 +508,7 @@ nav {
 .logo {
   height: 50px;
 }
-.links-container {
+.navbar-menu {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -587,7 +576,7 @@ nav {
   .nav-toggle {
     display: none;
   }
-  .links-container {
+  .navbar-menu {
     height: auto !important;
   }
   /* important to add auto to height
@@ -595,7 +584,7 @@ nav {
   in a bigger screen
   */
   .links {
-    /*height: auto;*/
+    height: auto;
     display: flex;
   }
   .links a {
@@ -623,6 +612,30 @@ nav {
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
+  }
+  #contactsBtn {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+    background-color:#bddbfa;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+  }
+  #contactsBtn:hover {
+    background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color:#80b5ea;
+  }
+  #contactsBtn:active {
+    position:relative;
+    top:1px;
   }
 }
 /* hero
@@ -659,6 +672,30 @@ header {
   .container p {
     max-width: 40rem;
   }
+  #contactsBtn {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+    background-color:#bddbfa;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+  }
+  #contactsBtn:hover {
+    background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color:#80b5ea;
+  }
+  #contactsBtn:active {
+    position:relative;
+    top:1px;
+  }
 }
 /* sections and title */
 .title h2 {
@@ -673,7 +710,8 @@ header {
   height: 100vh;
 }
 #projects {
-  height: 95vh;
+  height: auto;
+  margin-bottom: 10%;
 }
 #contact {
   background: var(--clr-white);
@@ -881,16 +919,15 @@ footer {
 }
 
 .bio {
-  width: 835px;
-    font-size: 20px;
+  font-size: 12px;
     font-family: 'Courier Prime', monospace;
-    padding-right: 22px;
-    display: inline-block;
+    display: block;
     text-align: -webkit-auto;
     height: 70vh;
     padding-top: 6%;
-    margin-right: -35px;
-    margin-left: -80px;
+    width: auto;
+    margin: auto;
+    padding: 20px;
 }
 
 #question-contact {
@@ -1014,6 +1051,30 @@ label {
 #social-header{
   display: none;
 }
+#contactsBtn {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+#contactsBtn:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+#contactsBtn:active {
+	position:relative;
+	top:1px;
+}
 
 .networks {
   display: block;
@@ -1021,17 +1082,18 @@ label {
 }
 
 form#contact-form {
-  padding-right: 30px;
-  margin-left: -30px;
-  width: 65%;
+  height: auto;
+  max-width: 100%;
+  color: #fff;
   position: relative;
-  left: 50%;
-  margin-top: -10%;
+  float: right;
+  margin: 16px;
+  bottom: 1vh;
 }
 
 .text-bio {
   color: #0a193b;
-  width: 367px;
+  width: auto;
   position: relative;
   text-align: justify;
   margin-left: auto;
@@ -1039,16 +1101,15 @@ form#contact-form {
 }
 
 .bio {
-  width: auto;
-  font-size: 18px;
-  font-size: 16px;
-  font-family: 'Courier Prime', monospace;
-  display: inline-block;
-  text-align: -webkit-auto;
-  height: 70vh;
-  padding-top: 6%;
-  margin-right: auto;
-  margin-left: auto;
+  font-size: 12px;
+    font-family: 'Courier Prime', monospace;
+    display: block;
+    text-align: -webkit-auto;
+    height: 70vh;
+    padding-top: 6%;
+    width: auto;
+    margin: auto;
+    padding: 20px;
 }
 
 div#current-stacks {
@@ -1063,8 +1124,12 @@ div#future-stacks {
   position: absolute;
 }
 
-.footer {
-  display: none;
+footer {
+  background: var(--clr-grey-1);
+  padding: 1rem 3rem;
+  margin: 16px;
+  color: #BBC3D3;
+  height: 100px;
 }
 
 }
@@ -1102,7 +1167,30 @@ div#future-stacks {
   .column-card {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+  }
+  #contactsBtn {
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+    background-color:#bddbfa;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:8px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+  }
+  #contactsBtn:hover {
+    background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color:#80b5ea;
+  }
+  #contactsBtn:active {
+    position:relative;
+    top:1px;
   }
 }
 
@@ -1122,38 +1210,53 @@ div#future-stacks {
 .content h2 {
   color: #fff;
   font-size: 3.5em;
-  position: absolute;
   transform: translate(-55%, -60%);
   text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 50px;
 }
 
-.content h2:nth-child(3) {
-  color: transparent;
-  padding-left: 8.5em;
-  -webkit-text-stroke: 1px #ffffff;
+#contactsBtn {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
 }
-
-.content h2:nth-child(4) {
-  color: #f04aa9ba;
-  padding-left: 8.5em;
-  animation: animate 4s ease-in-out infinite;
+#contactsBtn:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+#contactsBtn:active {
+	position:relative;
+	top:1px;
 }
 
 .bio {
-  width: auto;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Courier Prime', monospace;
-  display: inline-block;
+  display: block;
   text-align: -webkit-auto;
   height: 70vh;
-  padding-top: 4%;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 6%;
+  width: auto;
+  margin: auto;
+  padding: 20px;
 }
 
 .text-bio {
   color: #0a193b;
-  width: 370px;
+  width: auto;
   position: relative;
   text-align: justify;
   margin-left: auto;
@@ -1179,4 +1282,9 @@ div#future-stacks i {
   display: none;
 }
 
+}
+@media screen and (min-width: 620px) {
+  .content h2{
+    top: 0;
+  }
 }

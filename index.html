@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+    	<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="img/favicon.ico" /> 
         <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -28,15 +28,15 @@
             margin: auto;
           }
           </style>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!-- header -->
         <header id="home">
         <nav id="nav">
             <div class="nav-center">
-                <!-- nav header -->
+            <!-- nav header -->
                 <div class="nav-header">
                     <img src="img/favicon.ico" class="logo" alt="logo" />
                     <button class="nav-toggle" alt="horizontal bars to represent the menu that can be toggled when navigating the webpage">
@@ -44,59 +44,55 @@
                     </button>
                 </div>
                 <!-- links -->
-                <div class="links-container">
+                <div class="navbar-menu">
                     <ul class="links">
-                    <li>
-                        <a href="#home" class="scroll-link"><i class="fa fa-fw fa-home"></i>home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="scroll-link"><i class="fas fa-address-card"></i>about</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="scroll-link"><i class="fas fa-suitcase"></i>projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="scroll-link"><i class="fas fa-envelope"></i>contact</a>
-                    </li>
-                    </ul>
+						<li>
+							<a href="#home" class="scroll-link"><i class="fa fa-fw fa-home"></i>home</a>
+						</li>
+						<li>
+							<a href="#about" class="scroll-link"><i class="fas fa-address-card"></i>about</a>
+						</li>
+						<li>
+							<a href="#projects" class="scroll-link"><i class="fas fa-suitcase"></i>projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="scroll-link"><i class="fas fa-envelope"></i>contact</a>
+						</li>
+					</ul>
                 </div>
                 <!-- social media -->
                 <ul class="social-icons" alt="social icons">
-                <li>
-                    <a href="https://github.com/yoshinodev" alt="my github" target="_blank">
-                    <i class="fab fa-github"> Git</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/agilbert6/" alt="my linkedin" target="_blank">
-                    <i class="fab fa-linkedin"> Lin</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/cur1ousm1nd/" alt="my instagram" target="_blank">
-                    <i class="fab fa-instagram"> Ig</i>
-                    </a>
-                </li>
+                	<li>
+						<a href="https://github.com/yoshinodev" alt="my github" target="_blank">
+							<i class="fab fa-github"> Git</i>
+                    	</a>
+                	</li>
+                	<li>
+						<a href="https://linkedin.com/in/agilbert6/" alt="my linkedin" target="_blank">
+							<i class="fab fa-linkedin"> Lin</i>
+						</a>
+                	</li>
+                	<li>
+						<a href="https://instagram.com/cur1ousm1nd/" alt="my instagram" target="_blank">
+							<i class="fab fa-instagram"> Ig</i>
+						</a>
+                	</li>
                 </ul>
             </div>
         </nav>
         <!-- banner  -->
         <div class="banner">
             <div class="container">
-              <div class="name-heading">
-                <h1>My name is
-
-                </div>
             <div class="content">
-                    <h2>Anaïs</h2><h2>Anaïs</h2>
-                    <h2>Gilbert</h2><h2>Gilbert</h2>
-                    
-            </div>
+				<div class="name-heading">
+                	<h1>My name is
+            	</div>
+                    <h2>Anaïs Gilbert</h2>
                   </h1>
-                <p id="banner-description">I'm a self-taught developer. <i class="fas fa-coffee"></i></p>
-                <a href="#contact" class="scroll-link btn btn-white">Contacts</a>
+                <p id="banner-description">I'm a passionate fullstack developer. <i class="fas fa-coffee"></i></p>
+                <a href="#contact" id="contactsBtn">Contacts</a>
             </div>
-        </div>
+        </div><!--scroll-link btn btn-white-->
     </header>
     <!--about-->
     <section id="about" class="section">
@@ -132,20 +128,21 @@
                         </p>
                       </div>
                         <div id="current-stacks">
-                          My <strong>current stacks</strong> are: HTML, CSS, Javascript and SQL.
+                          My <strong>current stacks</strong> are: HTML, CSS, Javascript, Nodejs, SQL and C.
                           <ul>
                             <i class="devicon-html5-plain-wordmark colored" style="font-size:50px" ></i>
                             <i class="devicon-css3-plain-wordmark colored" style="font-size:50px"></i>
                             <i class="devicon-javascript-plain colored" style="font-size:50px"></i>
+							<i class="devicon-nodejs-plain-wordmark colored" style="font-size:50px"></i>
                             <i class="devicon-mysql-plain-wordmark colored" style="font-size:50px"></i>
                           </ul>
                         </div>
                           <div id="future-stacks">
-                            Future learning stacks: Nodejs, C# and Java.
+                            Future learning stacks: Angular, PHP, C#.
                             <ul>
-                              <i class="devicon-nodejs-plain-wordmark colored" style="font-size:50px"></i>
+							  <i class="devicon-angularjs-plain colored" style="font-size:50px"></i>
+							  <i class="devicon-php-plain colored" style="font-size:50px"></i>
                               <i class="devicon-csharp-plain-wordmark colored" style="font-size:50px"></i>
-                              <i class="devicon-java-plain-wordmark colored" style="font-size:50px"></i>
                             </ul>
                           </div>
                     </div>
