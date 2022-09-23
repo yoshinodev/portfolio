@@ -198,11 +198,11 @@ img.contact-img {
 
 .content h2 {
   color: #fff;
-  font-size: 5.5em;
+  font-size: 3.5em;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   position: relative;
-  left: 45%;
+  left: 47%;
   top: 50px;
 }
 
@@ -942,6 +942,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   /*margin-bottom: 16px; */
   resize: vertical;
+  color:#222;
 }
 
 input[type=submit] {
@@ -964,6 +965,7 @@ input[type="email" i] {
   margin-top: 6px;
   /*margin-bottom: 16px; */
   resize: vertical;
+  color:rgb(21, 21, 21);
 }
 
 label {

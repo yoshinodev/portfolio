@@ -18,7 +18,6 @@ navToggle.addEventListener("click", function () {
   } else {
     linksContainer.style.height = 0;
   }
-  // console.log(linksContainer.getBoundingClientRect());
 });
 
 // ********** fixed navbar ************
@@ -92,7 +91,7 @@ document.getElementById('contact-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Successfully sent. Thanks for reaching out, I will answer shortly!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
