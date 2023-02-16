@@ -85,11 +85,13 @@
             <div class="container">
             <div class="content">
 				<div class="name-heading">
-                	<h1>My name is
-            	</div>
-                    <h2>Anaïs Gilbert</h2>
-                  </h1>
-                <p id="banner-description">I'm a passionate fullstack developer. <i class="fas fa-coffee"></i></p>
+					<h1>My name is</h1>
+				</div>
+				<div class="name">
+					<div class="name1"><span class="nameSpan">A</span>naïs</div>
+					<div class="name2"><span class="nameSpan">Gil</span>bert</div>
+				</div>
+                <p id="banner-description">I'm a passionate web developer. <i class="fas fa-coffee"></i></p>
                 <a href="#contact" id="contactsBtn">Contacts</a>
             </div>
         </div><!--scroll-link btn btn-white-->
@@ -225,28 +227,27 @@
             <h2>My <span>contacts</span></h2>
         </div>
         <div class="email-container">
-            <div class="contact-text" style="text-align:center">
-              <h2>Get in touch</h2>
-              <p id="question-contact">Want to work together or have any questions?</p>
-            </div>
-            <div class="row">
-              <div class="column">
-                <img class="contact-img" src="img/contact.png" alt="3 people with different ethnics drawing and climbing stairs together" style="width:100%">
-              <div>
-                <h2 id="social-header">Social <br>networks:</h2>
+			<div class="containerContact">
+				<div class="contact-text" style="text-align:center">
+					<h2>Get in touch</h2>
+					<p id="question-contact">Want to work together or have any questions?</p>
+				</div>
+				<div class="networks">
+					<h2 id="social-header">Social <br>networks:</h2>
+					<p id="email_net">Email: <a class="networks-link" alt="email" href="mailto:a.gilbertt3@gmail.com">a.gilbertt3@gmail.com</a></p>
+					<p id="phone">Phone: <a class="networks-link" href="+351911101230" alt="contact number" target="_blank">+351 911101230</a></p>
+					<p id="lkin">
+						<a id="lkin" href="https://linkedin.com/in/agilbert6/" target="_blank">
+							<i class="fab fa-linkedin"> Linkedin</i>
+						</a>
+					</p>
+					<p id="git"><a id="git" href="https://github.com/yoshinodev" target="_blank">
+						<i class="fab fa-github"> Github</i>
+						</a>
+					</p>
+				</div>
               </div>
-                <div class="networks">
-                  <p id="email_net">Email: <a class="networks-link" alt="email" href="mailto:a.gilbertt3@gmail.com">a.gilbertt3@gmail.com</a></p>
-                  <p id="phone">Phone: <a class="networks-link" href="+351911101230" alt="contact number" target="_blank">+351 911101230</a></p>
-                  <p id="lkin"><a id="lkin" href="https://linkedin.com/in/agilbert6/" target="_blank">
-                    <i class="fab fa-linkedin"> Linkedin</i>
-                    </a></p>
-                  <p id="git"><a id="git" href="https://github.com/yoshinodev" target="_blank">
-                    <i class="fab fa-github"> Github</i>
-                    </a></p>
-              </div>
-            </div>
-              <div class="column">
+           
                 <form id="contact-form">
                   <input type="hidden" name="contact_number">
                   <label for="fname">First Name</label>
@@ -257,18 +258,17 @@
                   <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
                   <input type="submit" id="send_button" value="Send Email">
                 </form>
-              </div>
             </div>
-          </div>
     </section>
-    <!-- footer -->
-    <footer class="footer">
-        <p id="footer">Copyright &copy; Anaïs Gilbert <span id="date"></span>. All rights reserved.</p>
-    </footer>
-    <!-- back to top button -->
+	<!-- back to top button -->
     <a href="#home" class="scroll-link top-link" alt="arrow pointing up to scroll the page to the top">TOP
         <i class="fas fa-arrow-up"></i>
     </a>
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; Anaïs Gilbert <span id="date"></span>. All rights reserved.</p>
+    </footer>
+    
          <!-- javascript -->
         <script src="app.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
